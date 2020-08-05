@@ -29,6 +29,9 @@
          "type":"config",
          "apiVersion": "2018-11-01",
          "name":"appsettings",
+         "dependsOn": [
+         "[concat('Microsot.Web/sites/',parameters('webapp-name'))]"
+         ],
          "properties": {
              "cacheConnection": "redis conection string"
          }
