@@ -1,5 +1,42 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "resources": []
+    "parameters": {
+            "webapp-name": {
+            "type": "string",
+            "metadata": {
+                "description":"Name of existing webapp"
+            }
+        },
+        "webapp-resourcegroup": {
+            "type": "string",
+            "metadata": {
+                "description": "ResourceGroup name containg webapp"
+            }
+        }
+    },
+    "resources": [
+    {
+        
+     "name": "[parameters('webapp-name')]",
+     "type": "Microsoft.Web/sites",
+     "apiVersion": "2018-11-01",
+     "dependsOn": [
+         "[concat('Microsot.Web/sites/',parameters('webapp-name'))]"
+     ],
+     "resources": [
+         {
+         "type":"config",
+         "apiVersion": "2018-11-01",
+         "name":"appsettings",
+         "properties": {
+             "cacheConnection": "redis conection string"
+         }
+         }
+     ]
+     }
+    ],
+    "variables": {},
+    "functions": [],
+    "outputs": {}
 }
