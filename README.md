@@ -1,3 +1,6 @@
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F100-blank-template%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Frafalwazny%2F0000-webapp_redis%2Fmaster%2F00-deploy.azrm.json)
 
-[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F100-blank-template%2Fazuredeploy.json)
+[![Visualize](http://armviz.io/visualizebutton.png>)](https%3A%2F%2Fraw.githubusercontent.com%2Frafalwazny%2F0000-webapp_redis%2Fmaster%2F00-deploy.azrm.json)
+
+
+ARM template to deploy redis and add connection string to webapp
